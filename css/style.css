@@ -7,11 +7,6 @@ body {
     background-color: #CCCCCC;
 }
 
-.main {
-     max-width: 800px;
-     margin: auto;
-}
-
 #nav-image {
     max-width: 100%;
     height: auto;
@@ -22,6 +17,7 @@ body {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
+    box-sizing: border-box;
 }
 
 .parallax_layer {
@@ -30,14 +26,19 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
+    border: red solid 1px;
 }
 
 .parallax_layer_base {
     transform: translateZ(0);
+    max-width: 800px;
+    /* margin: auto; */
 }
 
 .parallax_layer_back {
-    transform: translatez(-20px) scale(22);
+    transform: translatez(-10px) scale(11);
+    max-width: 800px;
+    /* margin: auto; */
 }
 
 .gallery {
