@@ -12,6 +12,17 @@ body {
     height: auto;
 }
 
+#logo {
+    max-width: 80px;
+}
+
+#nav-title {
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+/* Parallax Formating */
 .parallax {
     perspective: 1px;
     height: 100vh;
@@ -29,17 +40,18 @@ body {
     border: red solid 1px;
 }
 
+.parallax_layer_back {
+    transform: translatez(-10px) scale(11);
+    max-width: 800px;
+    /* margin: auto; */
+}
+
 .parallax_layer_base {
     transform: translateZ(0);
     max-width: 800px;
     /* margin: auto; */
 }
 
-.parallax_layer_back {
-    transform: translatez(-10px) scale(11);
-    max-width: 800px;
-    /* margin: auto; */
-}
 
 .gallery {
     height: 700px;
